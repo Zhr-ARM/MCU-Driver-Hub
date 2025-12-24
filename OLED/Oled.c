@@ -99,7 +99,7 @@ void OLED_Init(void)
 {
     // 初始化序列建议紧凑发送，这里为了可读性保留原样，
     // 实际生产中可以定义一个 const 数组一次性发完。
-    osDelay(100); // 上电延时
+    HAL_Delay(100); // 上电延时
 
     OLED_WriteCommand(0xAE); // Display Off
 
